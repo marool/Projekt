@@ -1,0 +1,33 @@
+/* Global */
+*, *::before, *::after {
+  box-sizing: border-box; }
+
+body {
+  font-size: 16px;
+  line-height: 1.7;
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #30336b;
+  margin: 0; }
+
+.container {
+  max-width: 1140px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto; }
+
+section {
+  padding-top: 96px;
+  padding-bottom: 96px; }
+
+.title {
+  font-size: 48px;
+  margin: 0 0 72px 0; }
+
+  /* Navigation */
+  .navigation {
+    background-image: url('images/Background-Image.jpg')
+  }
+
+.title {
+  font-size: 100px;
+}
