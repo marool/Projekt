@@ -4,13 +4,16 @@ $font-header: 'Montserrat', sans-serif;
 $font-other: 'Open Sans Condensed', sans-serif;
 $font-text: 'Roboto Slab', serif;
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
 }
 
 
   /* Navigation */
-
 
 .title-site {
   font-size: 26px;  
@@ -19,12 +22,12 @@ body {
   font-family: $font-logo;
 }
 
-.navigation a {
+.nav a {
   text-decoration: none;
   color: white;
 }
 
-.navigation li {
+.nav li {
   display: inline-block;
   font-size: 14px;
   padding: 0 10px;
@@ -42,6 +45,9 @@ body {
 .nav {
   text-align: right;
   font-family: $font-header;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
 }
 
 /* Splash */
@@ -105,4 +111,103 @@ body {
 .btn-one:hover {
   color: #0984e3;
   background-image: linear-gradient(90deg, #fab1a0 50%, transparent 50%);
+}
+
+/* Services */
+.title {
+  font-family: $font-header;
+  font-size: 40px;
+  font-style: bold;
+  text-align: center;
+  padding-top: 70px;
+}
+
+.subtitle {
+  font-family: $font-other;
+  font-size: 16px;
+  font-style: italic;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.header {
+  font-family: $font-header;
+  font-size: 18px;
+  font-style: bold;
+  text-align: center;
+}
+
+.text {
+  font-family: $font-text;
+  font-size: 14px;
+  text-align: center;
+}
+
+.fas {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  color: #FED136;
+  width: 80px;
+  height: 80px;
+  border: solid;
+  border-radius: 100%;
+  margin: 40px auto 0;
+  line-height: 80px;
+}
+
+/* Portfolio */
+
+.portfolio {
+  background: #dfe4ea;
+}
+
+.product {
+  font-size: 18px;
+  font-family: $font-header;
+  font-style: bold;
+  text-align: center;
+}
+
+.description {
+  font-size: 14px;
+  font-family: $font-other;
+  font-style: italic;
+  text-align: center;
+}
+
+img {
+  width: 350px;
+  height: 250px;
+}
+
+/* Footer */ 
+.icon li {
+  font-size: 0;
+}
+  
+.fab {
+  font-size: 25px;
+  background: black;
+  color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  transform: translateX(-50%);
+}
+
+.icon i {
+  line-height: 40px;
+  text-align: center;
+}
+
+.font {
+  font-family: $font-header;
+  font-size: 14px;
+  transform: translateY(50%);
 }
