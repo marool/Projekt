@@ -121,9 +121,9 @@ body {
 .title {
   font-family: "Montserrat", sans-serif;
   font-size: 40px;
-  font-style: bold;
+  font-weight: bold;
   text-align: center;
-  line-height: 1,5;
+  margin: 0;
 }
 
 .subtitle {
@@ -175,7 +175,6 @@ body {
   font-family: "Montserrat", sans-serif;
   font-style: bold;
   text-align: center;
-  padding: 10px;
 }
 
 .description {
@@ -183,7 +182,8 @@ body {
   font-family: "Open Sans Condensed", sans-serif;
   font-style: italic;
   text-align: center;
-  padding: 10px;
+  padding-bottom: 50px;
+  margin: -15px;
 }
 
 img {
@@ -193,13 +193,12 @@ img {
 
 .box {
   background: white;
-  padding-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 /* Footer */
 .icon li {
   font-size: 0;
-  padding-left: 10px;
   padding-right: 10px;
 }
 
@@ -218,6 +217,11 @@ img {
   -ms-flex-pack: center;
       justify-content: center;
   transform: translateX(-50%);
+}
+
+.center {
+  -ms-flex-align: center;
+      align-items: center;
 }
 
 .icon i {
@@ -243,26 +247,45 @@ img {
     height: 150px;
     position: relative;
   }
-  .nav li {
-    font-size: 6px;
-    padding: 5px;
-    -ms-flex-direction: column;
-        flex-direction: column;
-  }
   .title-site {
-    font-size: 20px;
-  }
-  .nav {
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 110px;
     -ms-flex-direction: column;
         flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    position: absolute;
+    top: 10%;
+    transform: translate(0, -50%);
+  }
+  .nav li {
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 30px;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    top: 50%;
+    transform: translate(0, 250%);
+  }
+  .splash-inner {
+    margin-top: 180px;
   }
   .page-title {
-    font-size: 30px;
-    padding: 0px;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 20px;
+    -ms-flex-direction: column;
+        flex-direction: column;
   }
   .page-subtitle {
-    font-size: 50px;
-    padding: 0px;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 20px;
+    -ms-flex-direction: column;
+        flex-direction: column;
   }
   .icon i {
     line-height: 20px;
@@ -276,18 +299,40 @@ img {
     height: 20px;
     padding: 0;
   }
-  .icon {
-    -ms-flex-pack: right;
-        justify-content: right;
+  .icon li {
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    display: -ms-flexbox;
+    display: flex;
+    top: 50%;
+    transform: translate(0, 50%);
   }
   .font {
+    display: -ms-flexbox;
+    display: flex;
     font-size: 10px;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    top: 50%;
+    transform: translate(0, 50%);
   }
   .title {
     line-height: 40px;
   }
   .padding {
     padding-bottom: 20px;
+  }
+  .center {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
