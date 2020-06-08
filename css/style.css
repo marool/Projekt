@@ -36,8 +36,7 @@ body {
 }
 
 .wrapper {
-  -ms-flex-align: center;
-      align-items: center;
+  align-items: center;
   padding: 20px 0;
 }
 
@@ -55,7 +54,6 @@ body {
   background-position: center center;
   background-size: cover;
   height: 100vh;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
 }
@@ -150,10 +148,8 @@ body {
 }
 
 .fas {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
+  justify-content: center;
   font-size: 40px;
   color: #FED136;
   width: 80px;
@@ -175,6 +171,8 @@ body {
   font-family: "Montserrat", sans-serif;
   font-style: bold;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .description {
@@ -182,18 +180,24 @@ body {
   font-family: "Open Sans Condensed", sans-serif;
   font-style: italic;
   text-align: center;
-  padding-bottom: 50px;
-  margin: -15px;
+  margin: 0;
+  padding: 0;
+}
+
+.margin {
+  padding: 30px;
 }
 
 img {
   width: 100%;
   height: 250px;
+  object-fit: cover;
 }
 
 .box {
   background: white;
   margin-bottom: 40px;
+  font-size: 0;
 }
 
 /* Footer */
@@ -211,17 +215,19 @@ img {
   height: 40px;
 }
 
+.padding {
+  padding-left: 0;
+}
+
 .icon {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
+  justify-content: center;
   transform: translateX(-50%);
+  padding-left: 0;
 }
 
 .center {
-  -ms-flex-align: center;
-      align-items: center;
+  align-items: center;
 }
 
 .icon i {
@@ -233,14 +239,12 @@ img {
 .font {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
-  transform: translateY(50%);
 }
 
 /* Media */
 @media (max-width: 767px) {
   .container {
-    -ms-flex-direction: column;
-        flex-direction: column;
+    flex-direction: column;
   }
   .container img {
     width: 100%;
@@ -248,91 +252,64 @@ img {
     position: relative;
   }
   .title-site {
-    display: -ms-flexbox;
     display: flex;
-    font-size: 110px;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    -ms-flex-pack: center;
-        justify-content: center;
-    position: absolute;
-    top: 10%;
-    transform: translate(0, -50%);
+    font-size: 50px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
   }
   .nav li {
-    display: -ms-flexbox;
-    display: flex;
     font-size: 30px;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    -ms-flex-pack: center;
-        justify-content: center;
-    top: 50%;
-    transform: translate(0, 250%);
+    padding-right: 10px;
+    text-align: center;
+    display: block;
+  }
+  .nav li:last-of-type {
+    padding: 0;
   }
   .splash-inner {
     margin-top: 180px;
   }
   .page-title {
-    display: -ms-flexbox;
     display: flex;
     font-size: 20px;
-    -ms-flex-direction: column;
-        flex-direction: column;
+    flex-direction: column;
   }
   .page-subtitle {
-    display: -ms-flexbox;
     display: flex;
     font-size: 20px;
-    -ms-flex-direction: column;
-        flex-direction: column;
+    flex-direction: column;
   }
   .icon i {
-    line-height: 20px;
+    line-height: 40px;
   }
   .fab {
-    font-size: 10px;
+    font-size: 20px;
     background: black;
     color: white;
     border-radius: 50%;
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
     padding: 0;
   }
-  .icon li {
-    -ms-flex-pack: center;
-        justify-content: center;
-    -ms-flex-direction: row;
-        flex-direction: row;
-    display: -ms-flexbox;
-    display: flex;
-    top: 50%;
-    transform: translate(0, 50%);
-  }
   .font {
-    display: -ms-flexbox;
-    display: flex;
     font-size: 10px;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    -ms-flex-pack: center;
-        justify-content: center;
-    top: 50%;
-    transform: translate(0, 50%);
+    text-align: center;
   }
   .title {
     line-height: 40px;
   }
   .padding {
-    padding-bottom: 20px;
+    padding: 0;
+  }
+  .icon {
+    transform: translateX(0%);
   }
   .center {
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    -ms-flex-pack: center;
-        justify-content: center;
+    flex-direction: column;
+    justify-content: center;
   }
 }
+
 /*# sourceMappingURL=style.css.map */
