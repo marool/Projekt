@@ -36,7 +36,8 @@ body {
 }
 
 .wrapper {
-  align-items: center;
+  -ms-flex-align: center;
+      align-items: center;
   padding: 20px 0;
 }
 
@@ -54,6 +55,7 @@ body {
   background-position: center center;
   background-size: cover;
   height: 100vh;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
 }
@@ -148,8 +150,10 @@ body {
 }
 
 .fas {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -ms-flex-pack: center;
+      justify-content: center;
   font-size: 40px;
   color: #FED136;
   width: 80px;
@@ -220,14 +224,17 @@ img {
 }
 
 .icon {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -ms-flex-pack: center;
+      justify-content: center;
   transform: translateX(-50%);
   padding-left: 0;
 }
 
 .center {
-  align-items: center;
+  -ms-flex-align: center;
+      align-items: center;
 }
 
 .icon i {
@@ -244,7 +251,8 @@ img {
 /* Media */
 @media (max-width: 767px) {
   .container {
-    flex-direction: column;
+    -ms-flex-direction: column;
+        flex-direction: column;
   }
   .container img {
     width: 100%;
@@ -252,10 +260,13 @@ img {
     position: relative;
   }
   .title-site {
+    display: -ms-flexbox;
     display: flex;
     font-size: 50px;
-    flex-direction: column;
-    justify-content: center;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
     text-align: center;
   }
   .nav li {
@@ -271,14 +282,18 @@ img {
     margin-top: 180px;
   }
   .page-title {
+    display: -ms-flexbox;
     display: flex;
     font-size: 20px;
-    flex-direction: column;
+    -ms-flex-direction: column;
+        flex-direction: column;
   }
   .page-subtitle {
+    display: -ms-flexbox;
     display: flex;
     font-size: 20px;
-    flex-direction: column;
+    -ms-flex-direction: column;
+        flex-direction: column;
   }
   .icon i {
     line-height: 40px;
@@ -306,10 +321,12 @@ img {
     transform: translateX(0%);
   }
   .center {
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
   }
 }
-
 /*# sourceMappingURL=style.css.map */
