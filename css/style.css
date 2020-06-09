@@ -190,6 +190,7 @@ body {
 
 .margin {
   padding: 30px;
+  background: white;
 }
 
 img {
@@ -199,11 +200,10 @@ img {
 }
 
 .box {
-  background: white;
+  margin: 0;
   margin-bottom: 40px;
-  margin-right: 20px;
   font-size: 0;
-  padding: 0;
+  padding-right: 20px;
 }
 
 /* Footer */
