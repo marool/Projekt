@@ -201,7 +201,9 @@ img {
 .box {
   background: white;
   margin-bottom: 40px;
+  margin-right: 20px;
   font-size: 0;
+  padding: 0;
 }
 
 /* Footer */
@@ -260,13 +262,7 @@ img {
     position: relative;
   }
   .title-site {
-    display: -ms-flexbox;
-    display: flex;
     font-size: 50px;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    -ms-flex-pack: center;
-        justify-content: center;
     text-align: center;
   }
   .nav li {
